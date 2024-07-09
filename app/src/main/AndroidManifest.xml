@@ -13,6 +13,10 @@
         android:theme="@style/Theme.PAM_PROJETOFINAL"
         tools:targetApi="31">
         <activity
+            android:name=".Menu"
+            android:exported="false"
+            android:theme="@style/Theme.PAM_PROJETOFINAL" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
