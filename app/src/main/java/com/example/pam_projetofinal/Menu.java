@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Menu extends AppCompatActivity {
 
     //Criar variaveis
-    TextView tv_nome;
     Button sobre, comecar, comojogar;
     SharedPreferences sp;
 
