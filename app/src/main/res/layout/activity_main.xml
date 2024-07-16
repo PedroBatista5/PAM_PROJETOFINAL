@@ -12,7 +12,7 @@
     <ImageView
         android:id="@+id/iv_gif"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="401dp"
         android:background="@drawable/load"  />
 
 </LinearLayout>
