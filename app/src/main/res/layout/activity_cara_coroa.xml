@@ -1,67 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".Cara_Coroa">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:text="CARA OU COROA"
-        android:textAlignment="center"
-        android:textSize="38dp"
-        android:textStyle="bold" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Cara ou Coroa"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TFINAL_Simao"
+        tools:targetApi="31">
+        <activity
+            android:name=".Index"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:orientation="horizontal">
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Fim"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Cara_Coroa"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Ajuda"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SplashScreenComecar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Sobre"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
 
-        <ImageView
-            android:id="@+id/iv_caraa"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="40dp"
-            android:background="@drawable/cara" />
-
-        <ImageView
-            android:id="@+id/iv_coroaa"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="105dp"
-            android:background="@drawable/coroa" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:orientation="horizontal">
-
-        <Button
-
-            android:id="@+id/bt_Cara"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#3A3A3A"
-            android:text="Cara" />
-
-        <Button
-            android:id="@+id/bt_Coroa"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="65dp"
-            android:backgroundTint="#3A3A3A"
-            android:text="Coroa" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</manifest>
